@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="icon" type="image/x-icon" href="img/logo-yellow.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/schaakelaar.css">
+</head>
+
+
+<body>
+    <canvas id="confetti-canvas"></canvas>
+    <header>
+        <img class="img" src="img/bullswap-logo-long-white.svg" alt="werkt niet">
+        
+        <div class="button-group">
+            <label class="test-mode" for="test-mode">TestMode:</label>
+            <div class="switch-container" onclick="toggleSwitch()">
+                <div class="switch-toggle">OFF</div>
+            </div>
+            <button class="test">dev-test</button>
+            <button class="dev">dev-post</button>
+        </div>
+    </header>
+    <div id="notification-container" class="notification-container"></div>
+    <div class="box">
+        <div class="content">
+                <div class="info-text">
+                    de waardes willen niet opgehaald worden
+                    
+                </div>
+       
+    
+        </div>
+        <div class="box-inner ">
+            <div id="map"></div>
+    
+            <div class="chart-container">
+                <canvas class="graph" id="myBarChart"></canvas>
+            </div>
+            
+        </div>
+        
+    
+    </div>
+
+    
+
+
+
+    <script src="geojson/BE.js"></script>
+    <script src="geojson/BE-provinces.js"></script>
+    <script src="geojson/DE.js"></script>
+    <script src="geojson/FR.js"></script>
+    <script src="geojson/LU-provinces.js"></script>
+    <script src="geojson/LU.js"></script>
+    <script src="geojson/NL.js"></script>
+    <script src="geojson/NL-provinces.js"></script>
+    <script src="script/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script/confetti.js"></script>
+    <script src="script/startScript.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
